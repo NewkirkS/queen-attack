@@ -31,11 +31,13 @@
         function testDiagonal()
         {
             //Arrange
-
+            $test_Queen = new Queen(4, 4);
+            $targetX = 7;
+            $targetY = 7;
             //Act
-
+            $result = $test_Queen->canAttack($targetX, $targetY);
             //Assert
-
+            $this->assertEquals(true, $result);
         }
     }
  ?>

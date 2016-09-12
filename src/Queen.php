@@ -16,6 +16,8 @@
                 return true;
             } elseif ($this->getY() == $targetY) {
                 return true;
+            } elseif (($this->getX() - $this->getY()) == $targetX - $targetY) {
+                return true;
             }
         }
 
