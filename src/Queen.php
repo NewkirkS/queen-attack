@@ -14,6 +14,8 @@
         {
             if ($this->getX() == $targetX) {
                 return true;
+            } elseif ($this->getY() == $targetY) {
+                return true;
             }
         }
 
