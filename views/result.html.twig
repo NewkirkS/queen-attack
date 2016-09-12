@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <title>Results</title>
+    </head>
+    <body>
+        {% if result == true %}
+        <h2>The target piece is able to be captured!</h2>
+        {% else %}
+        <h3>The target piece is not able to be captured...</h3>
+        {% endif %}
+        <a href="/">BACK</a>
+    </body>
+</html>

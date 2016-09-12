@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <title>Queen Attack</title>
+    </head>
+    <body>
+        <h1>Queen Attack!</h1>
+        <h3>Check if a piece is capturable by your Queen</h3>
+        <p>
+            Enter the X (horizontal) and Y (vertical) coordinates of your Queen and the target piece to see if the target is capturable.
+        </p>
+        <img src="http://3.bp.blogspot.com/-OeoLo7bgI3s/UCSMlx1trbI/AAAAAAAAAFY/O8gCOQkZypE/s1600/annotated-chess_algebraic_naming-squares.gif" alt="chess coordinates" />
+        <p>
+            (Enter alphabetical characters as numbers with a=1, b=2, etc.)
+        </p>
+        <form action="/result">
+            <div>
+                <h3>Queen:</h3>
+                <div class="form-group">
+                    <label for="x_coordinate_queen">X</label>
+                    <input type="text" pattern='[1-8.]' name="x_coordinate_queen">
+                </div>
+                <div class="form-group">
+                    <label for="y_coordinate_queen">Y</label>
+                    <input type="text" pattern='[1-8.]' name="y_coordinate_queen">
+                </div>
+            </div>
+            <div>
+                <h3>Target Piece:</h3>
+                <div class="form-group">
+                    <label for="x_coordinate_target">X</label>
+                    <input type="text" pattern='[1-8.]' name="x_coordinate_target">
+                </div>
+                <div class="form-group">
+                    <label for="y_coordinate_target">Y</label>
+                    <input type="text" pattern='[1-8.]' name="y_coordinate_target">
+                </div>
+            </div>
+            <button  class="btn btn-success" type="submit">Play</button>
+        </form>
+    </body>
+</html>
